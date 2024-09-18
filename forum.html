@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discusión general en Infinity Galaxy">
+    <title>Discusión General - Infinity Galaxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202225;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #2f3136;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            border-radius: 50%;
+            margin-right: 10px;
+            width: 50px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #7289da;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #7289da;
+        }
+
+        .language-login {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .language-login .language {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .language-login .language img {
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        .login-btn a {
+            text-decoration: none;
+            color: white;
+            background-color: #7289da;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn a:hover {
+            background-color: #677bc4;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .container, .recent-comments {
+            background-color: #2f3136;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 65%;
+        }
+
+        .recent-comments {
+            width: 30%;
+            height: fit-content;
+        }
+
+        .recent-comments h3 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .thread {
+            margin-bottom: 20px;
+        }
+
+        .thread h2 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .comment, .recent-comment {
+            background-color: #3b3e45;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .comment h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #7289da;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-date {
+            font-size: 12px;
+            color: #95a5a6;
+        }
+
+        .comment-form {
+            background-color: #3b3e45;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #2f3136;
+            color: white;
+            resize: none;
+            height: 100px;
+            outline: none;
+        }
+
+        .comment-form button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-form button:hover {
+            background-color: #5b6eae;
+        }
+
+        .footer {
+            background-color: #2f3136;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            color: white;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background-color: #7289da;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pagination button:hover {
+            background-color: #677bc4;
+        }
+
+        #page-info {
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="infinitygalaxy.ico" alt="Logo">
+            <h1>🪐𝙄𝙣𝙛𝙞𝙣𝙞𝙩𝙮 𝙂𝙖𝙡𝙖𝙭𝙮 ✨</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="https://discord.gg/fuwrNKaJBC"><i class="fab fa-discord"></i> Join My Server</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Status</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i> Commands</a></li>
+                <li><a href="#"><i class="fas fa-gem"></i> Premium</a></li>
+            </ul>
+        </nav>
+        <div class="language-login">
+            <div class="language">
+                <img src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="Language Flag">
+                <span>EN</span>
+            </div>
+            <div class="login-btn">
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Contenedor principal de comentarios -->
+        <div class="container">
+            <div class="thread">
+                <h2>Discusión General</h2>
+                <!-- Aquí se agregarán los comentarios -->
+                <div id="comments-container"></div>
+            </div>
+
+            <!-- Contenedor para la paginación -->
+            <div class="pagination">
+                <button id="prev-page">Anterior</button>
+                <span id="page-info">Página 1 de 3</span>
+                <button id="next-page">Siguiente</button>
+            </div>
+
+            <!-- Formulario para agregar un nuevo comentario -->
+            <div class="comment-form">
+                <h3>Agregar un comentario:</h3>
+                <textarea id="comment-input" placeholder="Escribe tu comentario aquí..." required></textarea>
+                <button id="submit-comment">Enviar comentario</button>
+            </div>
+        </div>
+
+        <!-- Contenedor de comentarios recientes -->
+        <div class="recent-comments">
+            <h3>Comentarios Recientes</h3>
+            <div id="recent-comments-container"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Infinity Galaxy - Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        // Obtener contenedores de comentarios
+        const commentsContainer = document.getElementById('comments-container');
+        const recentCommentsContainer = document.getElementById('recent-comments-container');
+        const commentInput = document.getElementById('comment-input');
+        const submitButton = document.getElementById('submit-comment');
+
+        // Array vacío para los comentarios
+        let comments = [];
+
+        // Función para cargar comentarios
+        function loadComments() {
+            // Limpiar el contenedor antes de agregar los comentarios
+            commentsContainer.innerHTML = '';
+            recentCommentsContainer.innerHTML = '';
+
+            if (comments.length === 0) {
+                commentsContainer.innerHTML = '<p>No existen comentarios aún.</p>';
+            } else {
+                comments.forEach((comment, index) => {
+                    const commentElement = document.createElement('div');
+                    commentElement.classList.add('comment');
+
+                    commentElement.innerHTML = `
+                        <h3>${comment.usuario}</h3>
+                        <p>${comment.comentario}</p>
+                        <span class="comment-date">Publicado en ${comment.fecha}</span>
+                    `;
+
+                    commentsContainer.appendChild(commentElement);
+
+                    // Mostrar los 3 comentarios más recientes en la sección de "Comentarios Recientes"
+                    if (index < 3) {
+                        const recentCommentElement = document.createElement('div');
+                        recentCommentElement.classList.add('recent-comment');
+                        recentCommentElement.innerHTML = `
+                            <h3>${comment.usuario}</h3>
+                            <p>${comment.comentario}</p>
+                        `;
+                        recentCommentsContainer.appendChild(recentCommentElement);
+                    }
+                });
+            }
+        }
+
+        // Agregar un comentario
+        submitButton.addEventListener('click', () => {
+            const commentText = commentInput.value.trim();
+
+            if (commentText !== '') {
+                const newComment = {
+                    usuario: 'Usuario Anónimo',
+                    comentario: commentText,
+                    fecha: new Date().toLocaleDateString()
+                };
+
+                comments.unshift(newComment); // Agregar el comentario al principio
+                commentInput.value = ''; // Limpiar el textarea
+                loadComments(); // Recargar los comentarios
+            }
+        });
+
+        // Cargar los comentarios iniciales
+        loadComments();
+    </script>
+</body>
+</html>
