@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Free MC Server</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Server Settings</a></li>
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Logs</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Dashboard Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Welcome, Admin!</h1>
+                <p>Here's a summary of your server's activity:</p>
+            </div>
+
+            <!-- Cards for quick stats -->
+            <div class="stats-cards">
+                <div class="card">
+                    <h3>Total Servers</h3>
+                    <p id="total-servers">0</p>
+                </div>
+                <div class="card">
+                    <h3>Active Users</h3>
+                    <p id="active-users">0</p>
+                </div>
+                <div class="card">
+                    <h3>Server Uptime</h3>
+                    <p id="server-uptime">99.9%</p>
+                </div>
+            </div>
+
+            <!-- Section for logs or other actions -->
+            <div class="logs-section">
+                <h2>Recent Logs</h2>
+                <ul id="logs-list">
+                    <li>Server started on 2024-09-10</li>
+                    <li>User "JohnDoe" connected on 2024-09-10</li>
+                    <li>Server backup created on 2024-09-09</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
